@@ -63,5 +63,5 @@ blur_factor=int(input('smoothening factor; 0 for no smoothening : '))
 if(blur_factor):
 	img=cv2.blur(img,(blur_factor,blur_factor))
 	img=cv2.bitwise_and(image,img) 
-cv2.imwrite('final.jpg',img)
+cv2.imwrite(output,img)
 print('image saved. ')
