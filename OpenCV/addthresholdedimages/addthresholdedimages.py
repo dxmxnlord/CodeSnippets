@@ -76,7 +76,8 @@ if(blur_factor):
 	img=cv2.bitwise_and(image,img)
 mask_inv=cv2.bitwise_not(mask)
 img2=cv2.bitwise_and(img2,img2,mask=mask_inv) 
-img2=cv2.blur(img2,(blur_factor,blur_factor)) 
+if(blur_factor):
+	img2=cv2.blur(img2,(blur_factor,blur_factor)) 
 img3=cv2.add(img,img2)
 cv2.imwrite(output,img3)
 print('image saved. ')
