@@ -51,7 +51,7 @@ if(height*width > height2*width2):
   image2=cv2.resize(image2,(width,height),interpolation=cv2.INTER_LINEAR)
 else:
   image2=cv2.resize(image2,(width,height),interpolation=cv2.INTER_AREA)
-img2=image
+img2=image2
 img=image
 imggs=cv2.imread(directory,cv2.IMREAD_GRAYSCALE)
 imggs2=cv2.imread(directory2,cv2.IMREAD_GRAYSCALE)
