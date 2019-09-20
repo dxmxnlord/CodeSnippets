@@ -65,4 +65,4 @@ MakeWal(){
 # exmaple call : MakeWal 30 230
 
 # the COLOR array contains the colors in it. You can use it in your lemonbar bar call like this for example :
-# echo -e "%{l}%{B${color[0]}} $(YourFunction) %{B-}" 
+# echo -e "%{l}%{B${COLOR[0]}} $(YourFunction) %{B-}" 
